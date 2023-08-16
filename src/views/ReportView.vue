@@ -56,57 +56,6 @@
       </div>
     </div>
     
-      <div id="pdfDom2"   style="display: none" v-show="showDive">
-        <div class="px-3 flex text-xl">
-          <p class="pr-5">頭痛日誌--測試</p>
-        </div>
-        <div class="p-3 flex">
-          
-          <table class="table-fixed border-separate w-full">
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">日期</th>
-                <td class="border border-slate-300 bg-red-50" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.date }}</td>
-              </tr>
-              <tr class="1">
-                <th class="bg-gray-500 text-white p-3">持續時間</th>
-                <td class="border border-slate-300" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q1 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">頭痛程度</th>
-                <td class="border border-slate-300 bg-red-50" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q2 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">伴隨症狀</th>
-                <td class="border border-slate-300" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q3 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">頭痛位置</th>
-                <td class="border border-slate-300 bg-red-50" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q4 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">頭痛預兆</th>
-                <td class="border border-slate-300" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q5 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">頭痛藥物</th>
-                <td class="border border-slate-300 bg-red-50" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q6 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">藥物效果</th>
-                <td class="border border-slate-300" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q7 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">是否月經</th>
-                <td class="border border-slate-300 bg-red-50" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q8 }}</td>
-              </tr>
-              <tr class="">
-                <th class="bg-gray-500 text-white p-3">其他問題</th>
-                <td class="border border-slate-300" v-for="(item, key, index) in tableData" :key="key" :index="index">{{ item.q9 }}</td>
-              </tr>
-            
-          </table>
-        </div>
-      </div>
     <div class="flex justify-center">
       <el-pagination
         :current-page="currentPage"
