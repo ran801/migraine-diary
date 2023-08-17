@@ -195,7 +195,7 @@
             res.data.forEach(function (item, index, array) {
               b[item.diary_date] || (b[item.diary_date] = []);
               b[item.diary_date] && b[item.diary_date].push(item);
-              //console.log(item);
+              console.log(item);
             });
     
             Object.entries(b).forEach(([key, value], index, array) => {
