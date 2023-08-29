@@ -3,6 +3,7 @@ import ReportView from '../views/ReportView.vue'
 import ReportView2 from '../views/ReportView2.vue'
 import ReportView3 from '../views/ReportView3.vue'
 import ReportView4 from '../views/ReportView4.vue'
+import test from '../views/test.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path:'/4',
     name:'reportTest4',
     component: ReportView4
+  },
+  {
+    path:'/5',
+    name:'test',
+    component:test
   }
 ]
 
